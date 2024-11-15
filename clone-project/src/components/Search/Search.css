@@ -1,0 +1,30 @@
+/* Search.css */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+    
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 0.5em;
+    margin-right: 0.5em;
+}
+
+.search-bar button {
+    padding: 0.5em 1em;
+    border: 0;
+    border-radius: 0px 25px 25px 0px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.search-bar button .search-logo{
+    width: 30px;
+}
+.search-results {
+    display: flex;
+    flex-direction: column;
+}
+

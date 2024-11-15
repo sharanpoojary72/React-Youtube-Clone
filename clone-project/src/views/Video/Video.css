@@ -1,0 +1,13 @@
+.play-container {
+    background: #ffffff;
+    padding: 20px 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px; /* Adjust this to match the navbar height */
+}
+@media (max-width:800px) {
+    .play-container{
+        padding-inline: 1em;
+    }
+}

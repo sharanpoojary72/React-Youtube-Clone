@@ -1,0 +1,133 @@
+.sidebar {
+    background: #fff;
+    width: 16%;
+    max-height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 12px;
+    margin-top: 54px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 50;
+}
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+    transition: opacity 0.3s;
+    /* Smooth transition for hiding */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #b3b3b3;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+}
+
+/* Initially hide the scrollbar */
+.sidebar:hover::-webkit-scrollbar {
+    opacity: 1;
+}
+
+.sidebar::-webkit-scrollbar {
+    opacity: 0;
+    /* Hide scrollbar by default */
+}
+
+.shortcut-links img {
+    width: 20px;
+}
+
+.side-link {
+    color: #000;
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20px; */
+    width: 100%;
+    flex-wrap: wrap;
+    cursor: pointer;
+    gap: 25px;
+    outline: 0;
+    border-radius: 10px;
+    min-height: 40px;
+    padding-inline: 10%;
+    /* margin-inline: 1%; */
+}
+
+.side-link:hover {
+    background-color: #E5E5E5;
+    border-radius: 10px;
+}
+
+.side-link p {
+    font-size: 14px;
+}
+
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 100%;
+    margin-block: 10px;
+}
+
+.small-sidebar {
+    width: 90px;
+}
+
+.small-sidebar .side-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-sidebar p {
+    display: none;
+}
+
+
+.small-sidebar hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 100%;
+    /* margin-block: 50%; */
+}
+
+.side-link.active {
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    border-bottom: 1px solid red;
+}
+
+@media (max-width:1024px){
+    .sidebar {
+        width: 22%;
+    }
+    .small-sidebar{
+        width: 8%;
+    }
+}
+
+@media (max-width:768px) {
+    .sidebar {
+        width: 26%;
+        padding: 8px;
+    }
+    .side-link{
+        padding-inline: 5%;
+    }
+    .small-sidebar{
+        width: 10%;
+    }
+}
+@media (max-width:430px) {
+    .sidebar{
+        width: 50%;
+        margin-top: 50px;
+    }
+    .small-sidebar{
+        display: none;
+    }
+}

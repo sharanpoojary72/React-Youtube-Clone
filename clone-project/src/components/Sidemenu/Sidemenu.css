@@ -1,0 +1,140 @@
+.feedback{
+    display: none;
+    position: absolute;
+    top: 0.4em;
+    right: 5em;
+    width: 21%;
+    max-height: 95vh; /* Limit the height of the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    padding: 1em;
+    z-index: 200;
+}
+
+.feedback-visible{
+    display: block;
+}
+
+.feedback::-webkit-scrollbar {
+    width: 8px;
+}
+
+.feedback::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.feedback::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.feedback hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 1em 0;
+}
+.user-link{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 25px;
+    outline: 0;
+    border-radius: 10px;
+    min-height: 45px;
+    padding-inline: 5%;
+    transition: background-color 0.3s ease;
+}
+
+.userimg img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.feedback hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 0.5em 0;
+}
+.userinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+.userinfo p:first-child {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.userinfo p:nth-child(2){
+    font-size: 0.7em;
+    color: #333333;
+}
+.userinfo a {
+    margin-top: 0.5em;
+    font-size: 0.85em;
+    color: #3ea6ff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.userinfo button:hover {
+    background-color: #358fcc;
+}
+
+/* Responsive */
+@media (max-width:1024px) {
+    .feedback{
+        width: 31%;
+        right: 4em;
+        padding: 0.5em;
+    }
+}
+@media (max-width:768px) {
+    .feedback{
+        width: 35%;
+        right: 4em;
+        padding: 0.5em;
+    }
+    .feedback .side-link{
+        padding-inline: 2%;
+    }
+    .user-link{
+        padding-inline: 0%;
+    }
+    .userimg img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}
+@media (max-width:430px) {
+    .feedback{
+        width: 70%;
+        right: 3em;
+        padding: 0.5em;
+    }
+    .feedback .side-link{
+        padding-inline: 2%;
+    }
+    .feedback .side-link p{
+        font-size: 12px;
+    }
+    .user-link{
+        padding-inline: 0%;
+    }
+    .userimg img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}
+

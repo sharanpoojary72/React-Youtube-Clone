@@ -1,0 +1,64 @@
+.feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px 16px;
+    margin-top: 60px;
+}
+
+.card img {
+    width: 100%;
+    height: 212px;
+    border-radius: 10px;
+}
+
+.feed-data {
+    display: flex;
+    gap: 1em;
+    margin-top: 5px;
+}
+
+.feed-user {
+    display: flex;
+}
+
+.feed-user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.feed-info h2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    margin: 5px 0;
+}
+
+.feed-info h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #606060;
+    margin: 5px 0;
+}
+
+.feed-info p {
+    font-size: 14px;
+}
+
+
+
+@media (max-width:1024px) {
+    .feed{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+}
+
+@media (max-width:768px) {
+    .feed {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        /* gap: 30px 16px;
+        margin-top: 60px; */
+    }
+}

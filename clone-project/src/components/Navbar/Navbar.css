@@ -1,0 +1,130 @@
+nav{
+    width: 100% ;
+    padding: 5px 2%;
+    justify-content: space-between;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 60;
+}
+.nav-left{
+    gap: 15px;
+}
+.nav-left .menu_icon{
+    width: 20px;
+}
+
+.nav-left .logo{
+    width: 110px;
+}
+
+.nav-middle{
+    gap: 15px;
+}
+.nav-middle .search-box{
+    border:  1px solid #ccc;
+    /* padding: 8px 12px; */
+    padding-left: 8px;
+    border-radius: 25px;
+    height: 40px;
+    
+}
+
+.nav-middle .search-box input{
+    width: 500px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.nav-middle .search-box img{
+    width: 15px;
+}
+
+.nav-middle .mic-button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 0;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-middle .mic{
+    width: 15px;
+    height: 15px;
+}
+.nav-middle .mic:hover{
+    background-color: darkgray;
+}
+.nav-right{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right img{
+    width: 25px;
+}
+
+.nav-right .user-icon{
+    width: 35px;
+    border-radius: 50%;
+}
+
+
+
+@media (max-width:1024px) {
+    .nav-middle .search-box input{
+        width: 300px;
+    }
+}
+@media (max-width:768px) {
+    /* .menu_icon{
+        display: none;
+    } */
+    .nav-right img{
+        display: none;
+    }
+    .nav-right .user-icon{
+        display: block;
+        width: 30px;
+    }
+    .logo{
+        width: 90px;
+    }
+    .nav-middle .search-box input{
+        width: 100px;
+    }
+}
+@media (max-width:430px) {
+    /* .menu_icon{
+        display: none;
+    } */
+    .nav-left .logo{
+        display: none;
+    }
+    .nav-right img{
+        display: none;
+    }
+    .nav-right .user-icon{
+        display: block;
+        width: 30px;
+    }
+    .logo{
+        width: 90px;
+    }
+    .nav-middle .search-box{
+        height: 30px;
+    }
+    .search-box .search-bar button {
+        height: 29px;
+        padding: 0.1em 0.5em;
+    }
+    .nav-middle .search-box input{
+        width: 100px;
+    }
+}
