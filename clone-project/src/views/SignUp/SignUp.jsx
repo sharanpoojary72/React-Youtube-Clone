@@ -12,7 +12,7 @@ const Signup = ({ onSuccess }) => {
     const handleGoogleSuccess = async (response) => {
         try {
             const googleToken = response.credential;
-            const res = await fetch('http://localhost:5000/api/auth/google', {
+            const res = await fetch('https://react-youtube-clone-29v7.onrender.com/api/auth/google', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ token: googleToken }),
@@ -34,7 +34,7 @@ const Signup = ({ onSuccess }) => {
         e.preventDefault();
 
         try {
-            const response = await fetch("http://localhost:5000/api/auth/register", {
+            const response = await fetch("https://react-youtube-clone-29v7.onrender.com/api/auth/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

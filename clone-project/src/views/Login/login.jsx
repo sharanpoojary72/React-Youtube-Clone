@@ -13,7 +13,7 @@ const Login = () => {
     const handleGoogleSuccess = async (response) => {
         try {
             const googleToken = response.credential;
-            const res = await fetch('http://localhost:5000/api/auth/google', {
+            const res = await fetch('https://react-youtube-clone-29v7.onrender.com/api/auth/google', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ token: googleToken }),
@@ -32,7 +32,7 @@ const Login = () => {
         e.preventDefault();
         try {
             // Make API request to the backend
-            const response = await axios.post('http://localhost:5000/api/auth/login', {
+            const response = await axios.post('https://react-youtube-clone-29v7.onrender.com/api/auth/login', {
                 email,
                 password,
             });
